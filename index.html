@@ -29,47 +29,36 @@
   <div class="container d-flex flex-column align-items-center wtf">
     <h1>IP Address Tracker</h1>
   <div class="input-group mb-3 myIn">
-    <input type="text" class="form-control" placeholder="Search for any IP address or domain" aria-label="Recipient's username" aria-describedby="basic-addon2">
-    <button class="input-group-text" id="basic-addon2"><img src="./images/icon-arrow.svg" alt=""></button>
+    <input type="text" id="inputIp" class="form-control" placeholder="Search for any IP address or domain" aria-label="Recipient's username" aria-describedby="basic-addon2">
+    <button class="input-group-text" id="btn"><img src="./images/icon-arrow.svg" alt=""></button>
   </div>
     <div class="row output">
-      <div class="col border-end">
+      <div class="col-12  text-center text-md-start col-md-3 border-end">
         <div class="title">IP Address</div>
-        <div class="content">192.212.174.101</div>
+        <div class="content" id="ipNumber">...</div>
       </div>
-      <div class="col border-end">
+      <div class="col-12 mt-4 mt-md-0  text-center text-md-start col-md-3 border-end">
         <div class="title">Location</div>
-        <div class="content">Brooklyn, NY 10001</div>
+        <div class="content" id="location">...</div>
       </div>
-      <div class="col border-end">
+      <div class="col-12 mt-4 mt-md-0  text-center text-md-start col-md-3 border-end">
         <div class="title">Timezone</div>
-        <div class="content">UTC -05:00</div>
+        <div class="content" id="time">...</div>
       </div>
-      <div class="col">
+      <div class="col-12 mt-4 mt-md-0 text-center text-md-start col-md-3">
         <div class="title">ISP</div>
-        <div class="content">SpaceX Starlink</div>
+        <div class="content" id="isp">...</div>
       </div>
     </div>
 
   </div>
-  
-
- 
-
-  
-
-  
-
-  
-  
-  
-    UTC <!-- add offset value dynamically using the API -->
   
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script src="./assets/script.js"></script>
 </body>
 </html>

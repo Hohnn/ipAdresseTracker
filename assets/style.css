@@ -42,8 +42,8 @@ h1 {
     margin-top: 1rem;
 }
 
-.output .col {
-    padding: 0 2rem !important;
+.output > * {
+    padding: 0 2rem;
 }
 
 .content {
@@ -52,8 +52,9 @@ h1 {
 }
 
 .title {
-    
+    text-transform: uppercase;
     color: hsl(0, 0%, 59%);
+    font-weight: 500;
 }
 
 .wtf {
@@ -67,4 +68,10 @@ h1 {
     position: absolute;
     z-index: 1;
     bottom: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .output > * {
+        border: none !important;
+    }
 }
