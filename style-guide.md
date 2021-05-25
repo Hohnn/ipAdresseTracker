@@ -16,7 +16,7 @@ The designs were created to the following widths:
 
 ### Body Copy
 
-- Font size (text input): 18px
+- Font size (text input): 
 
 ### Font
 

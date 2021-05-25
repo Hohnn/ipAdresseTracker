@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+
+body {
+    background-image: url(../images/pattern-bg.png);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: auto 36vh;
+    position: relative;
+    font-size: 18px;
+    font-family: 'Rubik', sans-serif;
+    height: 100vh;
+}
+
+h1 {
+    color: white;
+    margin: 2rem 0;
+}
+
+.myIn {
+    max-width: 600px;
+}
+
+.myIn input, .myIn button {
+    border-radius: 13px;
+    border: none;
+    padding: 0.8rem 1.5rem;
+}
+
+.myIn button {
+    background-color: hsl(0, 0%, 17%);
+}
+
+.myIn button:hover {
+    background-color: hsl(0, 0%, 23%);
+}
+
+.output {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 15px;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+.output .col {
+    padding: 0 2rem !important;
+}
+
+.content {
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.title {
+    
+    color: hsl(0, 0%, 59%);
+}
+
+.wtf {
+    z-index: 100;
+    position: relative;
+}
+
+#mapid { 
+    height: 70vh;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+}

@@ -5,30 +5,71 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+  integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+  crossorigin=""/>
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+   integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+   crossorigin=""></script>
+  <link rel="stylesheet" href="./assets/style.css">
   <title>Frontend Mentor | IP Address Tracker</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
+    .attribution { font-size: 11px; text-align: center; position: absolute; bottom: 0; }
     .attribution a { color: hsl(228, 45%, 44%); }
+    
   </style>
 </head>
 <body>
+  <div id="mapid"></div>
 
-  IP Address Tracker
+  <div class="container d-flex flex-column align-items-center wtf">
+    <h1>IP Address Tracker</h1>
+  <div class="input-group mb-3 myIn">
+    <input type="text" class="form-control" placeholder="Search for any IP address or domain" aria-label="Recipient's username" aria-describedby="basic-addon2">
+    <button class="input-group-text" id="basic-addon2"><img src="./images/icon-arrow.svg" alt=""></button>
+  </div>
+    <div class="row output">
+      <div class="col border-end">
+        <div class="title">IP Address</div>
+        <div class="content">192.212.174.101</div>
+      </div>
+      <div class="col border-end">
+        <div class="title">Location</div>
+        <div class="content">Brooklyn, NY 10001</div>
+      </div>
+      <div class="col border-end">
+        <div class="title">Timezone</div>
+        <div class="content">UTC -05:00</div>
+      </div>
+      <div class="col">
+        <div class="title">ISP</div>
+        <div class="content">SpaceX Starlink</div>
+      </div>
+    </div>
 
-  Search for any IP address or domain
+  </div>
+  
 
-  IP Address
-  Location
-  Timezone
+ 
+
+  
+
+  
+
+  
+  
+  
     UTC <!-- add offset value dynamically using the API -->
-  ISP
+  
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div>
+  <script src="./assets/script.js"></script>
 </body>
 </html>
