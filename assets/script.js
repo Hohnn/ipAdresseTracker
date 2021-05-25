@@ -14,7 +14,7 @@ function map(params, lng, lat) {
 
 
     mymap = L.map('mapid').setView([latitude, longitude], 13);
-    let myicon = L.icon({iconUrl: '../images/icon-location.svg',
+    let myicon = L.icon({iconUrl: './images/icon-location.svg',
     iconAnchor: [23, 56],})
     var marker = L.marker([latitude, longitude], {icon: myicon}).addTo(mymap);
     
